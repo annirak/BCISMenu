@@ -187,3 +187,9 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# My Files
+Content/colours.css*
+Content/customLess.css*
+Content/material-theme.css*
+Content/mixins.css*
