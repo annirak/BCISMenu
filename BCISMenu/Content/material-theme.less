@@ -1,0 +1,114 @@
+﻿@import "colours.less";
+
+a, a:hover, a:focus {
+    color: @link-color;
+}
+
+.navbar, .navbar.navbar-default {
+    background-color: @menu-color;
+
+    .dropdown-menu {
+        li {
+            color: @menu-color;
+        }
+
+        li > a {
+            &:hover, &:focus {
+                color: @menu-color;
+            }
+        }
+    }
+
+    .navbar-header > h4 > small {
+        color: inherit;
+    }
+
+    .dropdown-large.open > ul > li > label {
+        color: @black;
+    }
+}
+
+.btn.btn-raised.btn-primary, .input-group-btn .btn.btn-raised.btn-primary, .btn.btn-fab.btn-primary, .input-group-btn .btn.btn-fab.btn-primary, .btn-group-raised .btn.btn-primary, .btn-group-raised .input-group-btn .btn.btn-primary {
+    background-color: @primary-color;
+    color: rgba(255,255,255, 0.84);
+}
+
+.btn.btn-raised:not(.btn-link):hover.btn-primary, .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-primary, .btn-group-raised .btn:not(.btn-link):hover.btn-primary, .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-primary, .btn.btn-raised:not(.btn-link):focus.btn-primary, .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-primary, .btn-group-raised .btn:not(.btn-link):focus.btn-primary, .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-primary, .btn.btn-raised:not(.btn-link).active.btn-primary, .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-primary, .btn-group-raised .btn:not(.btn-link).active.btn-primary, .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-primary, .btn.btn-raised:not(.btn-link):active.btn-primary, .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-primary, .btn-group-raised .btn:not(.btn-link):active.btn-primary, .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-primary {
+    background-color: lighten(@primary-color, 4%);
+}
+
+.form-group.is-focused {
+    label {
+        color: @primary-color;
+
+        &.control-label {
+            color: @primary-color;
+        }
+    }
+
+    .form-control {
+        background-image: -o-linear-gradient@primary-color, @primary-color), -o-linear-gradient(@gray, @gray);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(@primary-color), to(@primary-color)), -webkit-gradient(linear, left top, left bottom, from(@gray), to(@gray));
+        background-image: -webkit-linear-gradient(@primary-color, @primary-color), -webkit-linear-gradient(@gray, @gray);
+        background-image: linear-gradient(@primary-color, @primary-color), linear-gradient(@gray, @gray);
+    }
+}
+
+rect {
+    fill: @graph;
+
+    &:hover {
+        fill: lighten(@graph, 15%);
+    }
+}
+
+
+@media (max-width: 991px) {
+    .navbar-nav .open .dropdown-menu > li > a {
+        color: rgba(255,255,255, 0.84) !important;
+
+        &:hover, &:focus {
+            color: rgba(255, 255, 255, 0.84) !important;
+        }
+    }
+}
+
+
+#carousel-graphs {
+    .carousel-indicators {
+        li {
+            border-color: darken(@gray, 15%);
+
+            &:hover {
+                background-color: lighten(@gray, 5%);
+            }
+        }
+
+        .active {
+            background-color: @gray;
+        }
+    }
+
+    .panel {
+        .panel-heading {
+            background-color: @dark-blue;
+        }
+
+        .panel-body {
+            color: @black;
+        }
+    }
+}
+
+#appsDir {
+    background-color: @gray;
+
+    .panel-heading {
+        color: @clear-blue;
+        background-color: white;
+    }
+
+    .panel-body {
+        color: @black;
+    }
+}

@@ -1,0 +1,50 @@
+﻿path {
+            stroke: #fff;
+        }
+
+            path:hover {
+                opacity: 0.9;
+            }
+
+        rect:hover {
+            /*fill: blue;*/
+        }
+
+        .axis {
+            font: 10px sans-serif;
+        }
+
+        .legend tr {
+            border-bottom: 1px solid grey;
+        }
+
+            .legend tr:first-child {
+                border-top: 1px solid grey;
+            }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+
+        .x.axis path {
+            display: none;
+        }
+
+        #dashboard > div.col-md-3.col-sm-6 > svg {
+            margin-top: 25px;
+        }
+
+        #dashboard svg {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /*Hide graphs*/
+        #dashboard > .col-sm-6 {
+            display: none;
+        }
