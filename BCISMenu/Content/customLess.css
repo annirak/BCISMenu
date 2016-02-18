@@ -340,7 +340,7 @@
 }
 /*#endregion */
 #dashboard #carousel-graphs {
-  margin: 40px 5px;
+  margin-top: -20px;
 }
 #dashboard #carousel-graphs .carousel-indicators {
   bottom: -20px;
@@ -351,7 +351,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   z-index: 2;
 }
 #dashboard a:hover,
@@ -367,22 +367,36 @@
   line-height: 48px;
 }
 #dashboard #appsDir {
-  margin-top: 48px;
+  margin-top: 38px;
   margin-left: -15px;
   margin-right: -15px;
 }
 #dashboard #appsDir .panel {
-  /*padding-top: 10px;*/
-  width: 200px;
-  height: 200px;
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 768px) {
+  #dashboard #appsDir .panel {
+    min-width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  #dashboard #appsDir .panel {
+    min-width: 180px;
+  }
+}
+@media (min-width: 1366px) {
+  #dashboard #appsDir .panel {
+    min-width: 207px;
+  }
+}
 #dashboard #appsDir .panel-heading {
-  padding-bottom: 0;
+  padding: 10px 10px 0;
 }
 #dashboard #appsDir .panel-body {
+  text-align: center;
   padding: 0 10px;
+  display: table;
   /*height: 200px;
             @media (min-width: @screen-sm-min) {
                 height: 178px;
@@ -394,10 +408,29 @@
                 height: 178px;
             }*/
 }
-#dashboard #appsDir .panel-body h4,
-#dashboard #appsDir .panel-body p {
+#dashboard #appsDir .panel-body > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+#dashboard #appsDir .panel-title {
+  display: table;
+  height: 67px;
   text-align: center;
-  /*font-size: 15px;*/
+  width: 100%;
+}
+@media (max-width: 768px - 1), (min-width: 992px) {
+  #dashboard #appsDir .panel-title {
+    height: 48px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1366px) {
+  #dashboard #appsDir .panel-title {
+    height: 86px;
+  }
+}
+#dashboard #appsDir .panel-title h4 {
+  display: table-cell;
+  vertical-align: middle;
 }
 /*#region 5 Columns */
 .col-xs-15,

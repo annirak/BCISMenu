@@ -83,16 +83,16 @@ a:focus {
   background-color: #0a91c0;
 }
 .form-group.is-focused label {
-  color: #424242;
+  color: #0982ad;
 }
 .form-group.is-focused label.control-label {
-  color: #424242;
+  color: #0982ad;
 }
 .form-group.is-focused .form-control {
-  background-image: -o-linear-gradient(#424242, #424242), -o-linear-gradient(#bdbdbd, #bdbdbd);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#424242), to(#424242)), -webkit-gradient(linear, left top, left bottom, from(#bdbdbd), to(#bdbdbd));
-  background-image: -webkit-linear-gradient(#424242, #424242), -webkit-linear-gradient(#bdbdbd, #bdbdbd);
-  background-image: linear-gradient(#424242, #424242), linear-gradient(#bdbdbd, #bdbdbd);
+  background-image: -o-linear-gradient(#0982ad, #0982ad), -o-linear-gradient(#bdbdbd, #bdbdbd);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0982ad), to(#0982ad)), -webkit-gradient(linear, left top, left bottom, from(#bdbdbd), to(#bdbdbd));
+  background-image: -webkit-linear-gradient(#0982ad, #0982ad), -webkit-linear-gradient(#bdbdbd, #bdbdbd);
+  background-image: linear-gradient(#0982ad, #0982ad), linear-gradient(#bdbdbd, #bdbdbd);
 }
 rect {
   fill: #880096;
@@ -129,9 +129,10 @@ rect:hover {
 }
 #appsDir .panel-heading {
   color: #0982ad;
-  background-color: white;
+  background-color: #ffffff;
 }
-#appsDir .panel-body {
+#appsDir .panel-body,
+#appsDir .panel-heading h4 {
   color: #000000;
 }
 /*# sourceMappingURL=material-theme.css.map */
