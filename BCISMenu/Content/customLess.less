@@ -50,7 +50,7 @@
     }
 
     .navbar-header button.navbar-toggle#regularHamburger {
-        .glyphicon-remove {
+        .mdi-close {
             display: block;
         }
 
@@ -59,7 +59,7 @@
         }
 
         &.collapsed {
-            .glyphicon-remove {
+            .mdi-close {
                 display: none;
             }
 
@@ -517,6 +517,18 @@
             margin-top: 10px;
             z-index: 2;
         }
+
+        .panel-body {
+            height: 119px;
+
+            @media (min-width: @screen-lg-min) {
+                height: 176px;
+            }
+
+            @media (min-width: @screen-xlg-min),(max-width: @screen-sm-min) {
+                height: 158px;
+            }
+        }
     }
 
     a:hover, a:focus {
@@ -653,12 +665,26 @@
     }
 }
 
+#hamburgerClose {
+    float: left;
+    display: block;
+    color: white;
+    margin-right:0;
+}
+
 #menuNavbarOut {
     font-size: 16px;
 
     .dropdown-menu > li > a {
         font-size: 16px;
         font-weight: 300;
+    }
+
+    img.navbar-brand {
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
     }
 }
 

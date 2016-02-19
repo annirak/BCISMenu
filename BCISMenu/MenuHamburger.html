@@ -48,7 +48,11 @@
     </div>-->
 
     <nav class="navmenu navmenu-default navmenu-fixed-left offcanvas navmenu-inverse" role="navigation" id="menuNavbarOut">
-        <a class="navmenu-brand" href="#"><img class="navbar-brand" src="img/NYCLogo.png" alt="BCIS" /> BCIS<small>V6.0</small></a>
+        <button id="hamburgerClose" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="body">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="mdi mdi-close"></i>
+        </button><img class="navbar-brand" src="img/NYCLogo.png" alt="BCIS" />
+        <a class="navmenu-brand" href="#">BCIS<small>V6.0</small></a>
         <ul class="nav navmenu-nav">
             <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="#">BCS Portal</a></li>
@@ -148,6 +152,7 @@
 
     <nav class="navbar navbar-bcis">
         <button id="hamburger" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="body">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -157,7 +162,7 @@
             <div class="navbar-header">
                 <button id="regularHamburger" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menuNavbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="glyphicon glyphicon-remove"></span>
+                    <i class="mdi mdi-close"></i>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -284,7 +289,7 @@
 
     <div id="dashboard" class="container-fluid">
         <div id="carousel-graphs" class="carousel slide" data-ride="carousel" data-interval="false">
-            <h2>Key Performance Indicators</h2>
+            <h2>Dashboard</h2>
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-graphs" data-slide-to="0" class="active"></li>
@@ -296,7 +301,7 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="row">
-                        <div class="col-xs-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
@@ -304,13 +309,13 @@
                                         <i class="mdi mdi-chart-bar"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>What Happened Yesterday</h4>
+                                        <p>AMR, Payments, LPC, Billing.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
@@ -318,13 +323,13 @@
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>PFMR: City Wide Usage</h4>
+                                        <p>Usage by week, month, year.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
@@ -332,13 +337,13 @@
                                         <i class="mdi mdi-chart-areaspline"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Financial Summary</h4>
+                                        <p>Fiscal year billings, payments, LPC.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-xs-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
@@ -346,8 +351,8 @@
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Due Diligence</h4>
+                                        <p>Active meter accounts, flat rate accounts. </p>
                                     </div>
                                 </div>
                             </a>
@@ -356,54 +361,54 @@
                 </div>
                 <div class="item">
                     <div class="row">
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-bar"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Account Distributing by Status</h4>
+                                        <p>Distributing of accounts, meters by status</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>AMR Daily Installation Summary</h4>
+                                        <p>Completed, to be done, repairs.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-areaspline"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Bell &amp; Read Cycle Schedule</h4>
+                                        <p>This is the calendar for posting of readings for billings</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>FOS: Field Activity For the Week</h4>
+                                        <p>This chart shows the activity by the field operation staff.</p>
                                     </div>
                                 </div>
                             </a>
@@ -412,54 +417,54 @@
                 </div>
                 <div class="item">
                     <div class="row">
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-bar"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Service Line Protection (SLP)</h4>
+                                        <p>Distribution of eligible US enrolled.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Toilet Replacement Program (TRP)</h4>
+                                        <p>Distribution of eligible vs completed</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-areaspline"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Third Party Collections (TPC)</h4>
+                                        <p>Summary of collections.</p>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
                             <a href="#">
                                 <div class="panel panel-horizontal panel-primary">
                                     <div class="panel-heading">
                                         <i class="mdi mdi-chart-pie"></i>
                                     </div>
                                     <div class="panel-body">
-                                        <h3>Some Title</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                        <h4>Procurement and Tracking Applications (PACT)</h4>
+                                        <p>Status of BCS contracts</p>
                                     </div>
                                 </div>
                             </a>
@@ -468,683 +473,21 @@
                 </div>
             </div>
 
-            <!-- Controls -->
-            <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>-->
             <a class="btn btn-default btn-fab" href="#appsDir">
                 <i class="mdi mdi-chevron-down"></i>
             </a>
         </div>
 
-        <!--<div id="appsDir" class="container-fluid">
-            <h2>Applications Directory</h2>
-            <div class="row">
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-text"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Procurement and Contract Tracking (PACT)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>BAPPS</h4>
-                                <p>Bureau of Customer Services BCS Internal Webpage</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tablet-android"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Field Operations System (FOS)</h4>
-                                <p>Access work orders, activity reports & workflow while you are on the field.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-account-box-outline"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>My DEP Account (AMR)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Green Infrastructure Grant Program (GIGP)</h4>
-                                <p>Grant program for private property owners in combined sewer areas of New York City. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>AMR Bulk Data Extract Application</h4>
-                                <p>Services provided to share the consumption data with the users</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-swap-horizontal"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Toilet Replacement Program (TRP)</h4>
-                                <p>Incentivizes owners of residential buildings to replace older toilets with high-efficiency models</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Shared Documents (Sharepoint)</h4>
-                                <p>Share a document with the team by adding it to this document library.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-account"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Third-Party Collections (TPC)</h4>
-                                <p>Manage the process for selecting accounts to send to the Vendor. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-5 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Jobs/Tasks Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Service Line Protection Program (SLP)</h4>
-                                <p>DEP offers water and sewer service line protection to residential service lines of two inches or less.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>H2O Stats</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Employee Directory</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-web"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>WSPS Services (Production)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-settings"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Production Control</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-15">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-export"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>EPA Data Exchange</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>-->
-        <!--<div id="appsDir" class="container-fluid">
-            <h2>Applications Directory</h2>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2 col-lg-offset-1">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-text"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Procurement and Contract Tracking (PACT)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>BAPPS</h4>
-                                <p>Bureau of Customer Services BCS Internal Webpage</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tablet-android"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Field Operations System (FOS)</h4>
-                                <p>Access work orders, activity reports & workflow while you are on the field.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-account-box-outline"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>My DEP Account (AMR)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Green Infrastructure Grant Program (GIGP)</h4>
-                                <p>Grant program for private property owners in combined sewer areas of New York City. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2  col-lg-offset-1">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>AMR Bulk Data Extract Application</h4>
-                                <p>Services provided to share the consumption data with the users</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-swap-horizontal"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Toilet Replacement Program (TRP)</h4>
-                                <p>Incentivizes owners of residential buildings to replace older toilets with high-efficiency models</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Shared Documents (Sharepoint)</h4>
-                                <p>Share a document with the team by adding it to this document library.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-account"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Third-Party Collections (TPC)</h4>
-                                <p>Manage the process for selecting accounts to send to the Vendor. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Jobs/Tasks Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2 col-lg-offset-1">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Service Line Protection Program (SLP)</h4>
-                                <p>DEP offers water and sewer service line protection to residential service lines of two inches or less.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>H2O Stats</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Employee Directory</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-web"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>WSPS Services (Production)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-settings"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Production Control</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2 col-lg-offset-1">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-export"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>EPA Data Exchange</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>-->
-        <!--<div id="appsDir" class="container-fluid">
-            <h2>Applications Directory</h2>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-text"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Procurement and Contract Tracking (PACT)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>BAPPS</h4>
-                                <p>Bureau of Customer Services BCS Internal Webpage</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tablet-android"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Field Operations System (FOS)</h4>
-                                <p>Access work orders, activity reports & workflow while you are on the field.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-account-box-outline"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>My DEP Account (AMR)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Green Infrastructure Grant Program (GIGP)</h4>
-                                <p>Grant program for private property owners in combined sewer areas of New York City. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>AMR Bulk Data Extract Application</h4>
-                                <p>Services provided to share the consumption data with the users</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-swap-horizontal"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Toilet Replacement Program (TRP)</h4>
-                                <p>Incentivizes owners of residential buildings to replace older toilets with high-efficiency models</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Shared Documents (Sharepoint)</h4>
-                                <p>Share a document with the team by adding it to this document library.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-account"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Third-Party Collections (TPC)</h4>
-                                <p>Manage the process for selecting accounts to send to the Vendor. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Jobs/Tasks Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Service Line Protection Program (SLP)</h4>
-                                <p>DEP offers water and sewer service line protection to residential service lines of two inches or less.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>H2O Stats</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Employee Directory</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-web"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>WSPS Services (Production)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-settings"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Production Control</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-export"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>EPA Data Exchange</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>-->
         <div id="appsDir" class="container-fluid">
             <h2>Applications Directory</h2>
             <div class="row">
-                <div class=" col-sm-4 col-md-3 col-lg-2">
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-text"></i>
+                                <i class="mdi mdi-library"></i>
                                 <div class="panel-title">
-                                    <h4>Procurement and Contract Tracking (PACT)</h4>
+                                    <h4>BAPPS</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -1161,7 +504,7 @@
                             <div class="panel-heading">
                                 <i class="mdi mdi-library"></i>
                                 <div class="panel-title">
-                                    <h4>BAPPS</h4>
+                                    <h4>BAPPS (R)</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -1210,9 +553,9 @@
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
+                                <i class="mdi mdi-water-pump"></i>
                                 <div class="panel-title">
-                                    <h4>Green Infrastructure Grant Program (GIGP)</h4>
+                                    <h4>Service Line Protection Program (SLP)</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -1223,24 +566,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                                <div class="panel-title">
-                                    <h4>AMR Bulk Data Extract Application</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
                 <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
@@ -1248,23 +573,6 @@
                                 <i class="mdi mdi-swap-horizontal"></i>
                                 <div class="panel-title">
                                     <h4>Toilet Replacement Program (TRP)</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                                <div class="panel-title">
-                                    <h4>Shared Documents (Sharepoint)</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -1297,78 +605,9 @@
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
+                                <i class="mdi mdi-database"></i>
                                 <div class="panel-title">
-                                    <h4>Jobs/Tasks Reports</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                                <div class="panel-title">
-                                    <h4>Service Line Protection Program (SLP)</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                                <div class="panel-title">
-                                    <h4>H2O Stats</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book"></i>
-                                <div class="panel-title">
-                                    <h4>Employee Directory</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-web"></i>
-                                <div class="panel-title">
-                                    <h4>WSPS Services (Production)</h4>
+                                    <h4>AMR Bulk Data Extract Application</h4>
                                 </div>
                             </div>
                             <div class="panel-body">
@@ -1414,253 +653,143 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </div>
-
-
-        <!--<div id="appsDir" class="container-fluid">
-            <h2>Applications Directory</h2>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
                                 <i class="mdi mdi-clipboard-text"></i>
+                                <div class="panel-title">
+                                    <h4>Procurement and Contract Tracking (PACT)</h4>
+                                </div>
                             </div>
                             <div class="panel-body">
-                                <h4>Procurement and Contract Tracking (PACT)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>BAPPS</h4>
-                                <p>Bureau of Customer Services BCS Internal Webpage</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tablet-android"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Field Operations System (FOS)</h4>
-                                <p>Access work orders, activity reports & workflow while you are on the field.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-account-box-outline"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>My DEP Account (AMR)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Green Infrastructure Grant Program (GIGP)</h4>
-                                <p>Grant program for private property owners in combined sewer areas of New York City. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>AMR Bulk Data Extract Application</h4>
-                                <p>Services provided to share the consumption data with the users</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-swap-horizontal"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Toilet Replacement Program (TRP)</h4>
-                                <p>Incentivizes owners of residential buildings to replace older toilets with high-efficiency models</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Shared Documents (Sharepoint)</h4>
-                                <p>Share a document with the team by adding it to this document library.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-account"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Third-Party Collections (TPC)</h4>
-                                <p>Manage the process for selecting accounts to send to the Vendor. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Jobs/Tasks Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>Service Line Protection Program (SLP)</h4>
-                                <p>DEP offers water and sewer service line protection to residential service lines of two inches or less.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>H2O Stats</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-3">
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
                                 <i class="mdi mdi-book"></i>
+                                <div class="panel-title">
+                                    <h4>Employee Directory</h4>
+                                </div>
                             </div>
                             <div class="panel-body">
-                                <h4>Employee Directory</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-6 col-md-3">
+
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <i class="mdi mdi-tree"></i>
+                                <div class="panel-title">
+                                    <h4>Green Infrastructure Grant Program (GIGP)</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <i class="mdi mdi-chart-line"></i>
+                                <div class="panel-title">
+                                    <h4>H2O Stats</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <i class="mdi mdi-book-multiple"></i>
+                                <div class="panel-title">
+                                    <h4>Shared Documents (Sharepoint)</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
                                 <i class="mdi mdi-web"></i>
+                                <div class="panel-title">
+                                    <h4>WSPS Services (Production)</h4>
+                                </div>
                             </div>
                             <div class="panel-body">
-                                <h4>WSPS Services (Production)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xs-6 col-md-3">
+                <div class="col-sm-4 col-md-3 col-lg-2">
                     <a href="#">
                         <div class="panel">
                             <div class="panel-heading">
-                                <i class="mdi mdi-settings"></i>
+                                <i class="fa fa-tasks"></i>
+                                <div class="panel-title">
+                                    <h4>Jobs/Tasks Reports</h4>
+                                </div>
                             </div>
                             <div class="panel-body">
-                                <h4>Production Control</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-6 col-md-3">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-export"></i>
-                            </div>
-                            <div class="panel-body">
-                                <h4>EPA Data Exchange</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-        </div>-->
+        </div>
     </div>
 
 
     <footer class="navbar navbar-default pageFooter">
-        <!--<button class="btn btn-flat">Share</button>
-        <button class="btn btn-flat btn-warning">Learn More</button>-->
         <div class="container">
-            <p class="text-center">&copy; 2016 NYC <abbr title="Department of Environmnental Protection">DEP</abbr></p>
+            <p class="text-center">&copy; 2016 NYC <abbr title="Department of Environmental Protection">DEP</abbr></p>
         </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!--<script src="Scripts/lib/bootstrap.min.js"></script>-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.7/js/material.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.7/js/ripples.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-    <script>
-        //$('.navmenu').offcanvas();
-    </script>
+
     <script src="Scripts/menu.js"></script>
-    <!--<script src="http://d3js.org/d3.v3.min.js"></script>
-    <script src="Scripts/d3Example.js"></script>-->
 </body>
 </html>
