@@ -8,7 +8,7 @@
     <title>BCIS</title>
 
     <!-- Material Design fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" type="text/css">
     <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <link href="https://cdn.materialdesignicons.com/1.4.57/css/materialdesignicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -46,9 +46,9 @@
             <span class="icon-bar"></span>
         </button>
     </div>-->
-
+    <div class="" id="menu-background"></div>
     <nav class="navmenu navmenu-default navmenu-fixed-left offcanvas navmenu-inverse" role="navigation" id="menuNavbarOut">
-        <button id="hamburgerClose" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="body">
+        <button id="hamburgerClose" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut">
             <span class="sr-only">Toggle navigation</span>
             <i class="mdi mdi-close"></i>
         </button><img class="navbar-brand" src="img/NYCLogo.png" alt="BCIS" />
@@ -151,7 +151,7 @@
     </nav>
 
     <nav class="navbar navbar-bcis">
-        <button id="hamburger" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="body">
+        <button id="hamburger" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="#menu-background">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -473,7 +473,7 @@
                 </div>
             </div>
 
-            <a class="btn btn-default btn-fab" href="#appsDir">
+            <a class="btn btn-default btn-fab hidden-lg" href="#appsDir">
                 <i class="mdi mdi-chevron-down"></i>
             </a>
         </div>

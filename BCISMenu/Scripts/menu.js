@@ -44,6 +44,10 @@
         $('#menuNavbarOut .submenu > .collapse').collapse('hide');
         $(this).next('.collapse').collapse('toggle');
     });
+
+    $('#menuNavbarOut .dropdown > a').click(function clickSubmenu(e) {
+        $('#menuNavbarOut .submenu > .collapse').collapse('hide');
+    });
     //#endregion
 
 })();
