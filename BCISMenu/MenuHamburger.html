@@ -135,7 +135,41 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="#">Reports</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+                <ul class="dropdown-menu navmenu-nav" role="menu">
+                    <li class="submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Header</a>
+                        <ul class="collapse navmenu-nav" role="menu">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Header</a>
+                        <ul class="collapse navmenu-nav" role="menu">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Header</a>
+                        <ul class="collapse navmenu-nav" role="menu">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle text-capitalize" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     karina ruiz mireles <span class="caret"></span>
@@ -150,7 +184,7 @@
         </ul>
     </nav>
 
-    <nav class="navbar navbar-bcis">
+    <nav class="navbar navbar-default">
         <button id="hamburger" type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#menuNavbarOut" data-canvas="#menu-background">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -265,7 +299,51 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Reports</a></li>
+                    <li class="dropdown dropdown-large ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-large row container ">
+                            <li class="submenu col-md-3">
+                                <label class="hidden-xs hidden-sm submenuTitle">Header</label>
+                                <a class="visible-xs-block visible-sm-block submenuTitle" href="#">Header</a>
+                                <ul class="collapse">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu col-md-3">
+                                <label class="hidden-xs hidden-sm submenuTitle">Header</label>
+                                <a class="visible-xs-block visible-sm-block submenuTitle" href="#">Header</a>
+                                <ul class="collapse">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu col-md-3">
+                                <label class="hidden-xs hidden-sm submenuTitle">Header</label>
+                                <a class="visible-xs-block visible-sm-block submenuTitle" href="#">Header</a>
+                                <ul class="collapse">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu col-md-3">
+                                <label class="hidden-xs hidden-sm submenuTitle">Header</label>
+                                <a class="visible-xs-block visible-sm-block submenuTitle" href="#">Header</a>
+                                <ul class="collapse">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <!--</ul>
                     <ul class="nav navbar-nav navbar-right">-->
                     <!--<li><a href="#">My Work</a></li>
@@ -288,6 +366,7 @@
 
 
     <div id="dashboard" class="container-fluid">
+
         <div id="carousel-graphs" class="carousel slide" data-ride="carousel" data-interval="false">
             <h2>Dashboard</h2>
             <!-- Indicators -->
@@ -302,58 +381,47 @@
                 <div class="item active">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <!--<i class="material-icons md-48">insert_chart</i>-->
-                                        <i class="mdi mdi-chart-bar"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>What Happened Yesterday</h4>
-                                        <p>AMR, Payments, LPC, Billing.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-bar"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>What Happened Yesterday</h4>
+                                    <p>AMR, Payments, LPC, Billing.</p>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>AMR: City Wide Usage</h4>
+                                    <p>Usage by week, month, year.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <!--<i class="material-icons md-48">pie_chart</i>-->
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>PFMR: City Wide Usage</h4>
-                                        <p>Usage by week, month, year.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-areaspline"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Financial Summary</h4>
+                                    <p>Fiscal year billings, payments, LPC.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <!--<i class="material-icons md-48">show_chart</i>-->
-                                        <i class="mdi mdi-chart-areaspline"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Financial Summary</h4>
-                                        <p>Fiscal year billings, payments, LPC.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <!--<i class="material-icons md-48">pie_chart</i>-->
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Due Diligence</h4>
-                                        <p>Active meter accounts, flat rate accounts. </p>
-                                    </div>
+                                <div class="panel-body">
+                                    <h4>Due Diligence</h4>
+                                    <p>Active meter accounts, flat rate accounts. </p>
                                 </div>
                             </a>
                         </div>
@@ -362,54 +430,46 @@
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-bar"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Account Distributing by Status</h4>
-                                        <p>Distributing of accounts, meters by status</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-bar"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Account Distributing by Status</h4>
+                                    <p>Distributing of accounts, meters by status</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>AMR Daily Installation Summary</h4>
-                                        <p>Completed, to be done, repairs.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>AMR Daily Installation Summary</h4>
+                                    <p>Completed, to be done, repairs.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-areaspline"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Bell &amp; Read Cycle Schedule</h4>
-                                        <p>This is the calendar for posting of readings for billings</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-areaspline"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Bell &amp; Read Cycle Schedule</h4>
+                                    <p>This is the calendar for posting of readings for billings</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>FOS: Field Activity For the Week</h4>
-                                        <p>This chart shows the activity by the field operation staff.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>FOS: Field Activity For the Week</h4>
+                                    <p>This chart shows the activity by the field operation staff.</p>
                                 </div>
                             </a>
                         </div>
@@ -418,54 +478,46 @@
                 <div class="item">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-bar"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Service Line Protection (SLP)</h4>
-                                        <p>Distribution of eligible US enrolled.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-bar"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Service Line Protection (SLP)</h4>
+                                    <p>Distribution of eligible US enrolled.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Toilet Replacement Program (TRP)</h4>
-                                        <p>Distribution of eligible vs completed</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Toilet Replacement Program (TRP)</h4>
+                                    <p>Distribution of eligible vs completed</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-areaspline"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Third Party Collections (TPC)</h4>
-                                        <p>Summary of collections.</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-areaspline"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Third Party Collections (TPC)</h4>
+                                    <p>Summary of collections.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <a href="#">
-                                <div class="panel panel-horizontal panel-primary">
-                                    <div class="panel-heading">
-                                        <i class="mdi mdi-chart-pie"></i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <h4>Procurement and Tracking Applications (PACT)</h4>
-                                        <p>Status of BCS contracts</p>
-                                    </div>
+                            <a class="panel panel-horizontal panel-primary panel-clickable" href="#">
+                                <div class="panel-heading text-center">
+                                    <i class="mdi mdi-chart-pie"></i>
+                                </div>
+                                <div class="panel-body">
+                                    <h4>Procurement and Tracking Applications (PACT)</h4>
+                                    <p>Status of BCS contracts</p>
                                 </div>
                             </a>
                         </div>
@@ -477,298 +529,273 @@
                 <i class="mdi mdi-chevron-down"></i>
             </a>
         </div>
+    </div>
 
-        <div id="appsDir" class="container-fluid">
-            <h2>Applications Directory</h2>
-            <div class="row">
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                                <div class="panel-title">
-                                    <h4>BAPPS</h4>
-                                </div>
+    <div id="appsDir" class="container-fluid">
+        <h2>Applications Directory</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-library"></i>
+                            <div class="panel-title">
+                                <h4>BAPPS</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-library"></i>
-                                <div class="panel-title">
-                                    <h4>BAPPS (R)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-library"></i>
+                            <div class="panel-title">
+                                <h4>BAPPS (R)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tablet-android"></i>
-                                <div class="panel-title">
-                                    <h4>Field Operations System (FOS)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-tablet-android"></i>
+                            <div class="panel-title">
+                                <h4>Field Operations System (FOS)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-account-box-outline"></i>
-                                <div class="panel-title">
-                                    <h4>My DEP Account (AMR)</h4>
-                                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-account-box-outline"></i>
+                            <div class="panel-title">
+                                <h4>My DEP Account (AMR)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-water-pump"></i>
-                                <div class="panel-title">
-                                    <h4>Service Line Protection Program (SLP)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-water-pump"></i>
+                            <div class="panel-title">
+                                <h4>Service Line Protection Program (SLP)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-swap-horizontal"></i>
-                                <div class="panel-title">
-                                    <h4>Toilet Replacement Program (TRP)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-swap-horizontal"></i>
+                            <div class="panel-title">
+                                <h4>Toilet Replacement Program (TRP)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-account"></i>
-                                <div class="panel-title">
-                                    <h4>Third-Party Collections (TPC)</h4>
-                                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-clipboard-account"></i>
+                            <div class="panel-title">
+                                <h4>Third-Party Collections (TPC)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-database"></i>
-                                <div class="panel-title">
-                                    <h4>AMR Bulk Data Extract Application</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-database"></i>
+                            <div class="panel-title">
+                                <h4>AMR Bulk Data Extract Application</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-settings"></i>
-                                <div class="panel-title">
-                                    <h4>Production Control</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-settings"></i>
+                            <div class="panel-title">
+                                <h4>Production Control</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-export"></i>
-                                <div class="panel-title">
-                                    <h4>EPA Data Exchange</h4>
-                                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-export"></i>
+                            <div class="panel-title">
+                                <h4>EPA Data Exchange</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
-                            </div>
-
                         </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-clipboard-text"></i>
-                                <div class="panel-title">
-                                    <h4>Procurement and Contract Tracking (PACT)</h4>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book"></i>
-                                <div class="panel-title">
-                                    <h4>Employee Directory</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-clipboard-text"></i>
+                            <div class="panel-title">
+                                <h4>Procurement and Contract Tracking (PACT)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-tree"></i>
-                                <div class="panel-title">
-                                    <h4>Green Infrastructure Grant Program (GIGP)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-book"></i>
+                            <div class="panel-title">
+                                <h4>Employee Directory</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-chart-line"></i>
-                                <div class="panel-title">
-                                    <h4>H2O Stats</h4>
-                                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-tree"></i>
+                            <div class="panel-title">
+                                <h4>Green Infrastructure Grant Program (GIGP)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-book-multiple"></i>
-                                <div class="panel-title">
-                                    <h4>Shared Documents (Sharepoint)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-chart-line"></i>
+                            <div class="panel-title">
+                                <h4>H2O Stats</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="mdi mdi-web"></i>
-                                <div class="panel-title">
-                                    <h4>WSPS Services (Production)</h4>
-                                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-book-multiple"></i>
+                            <div class="panel-title">
+                                <h4>Shared Documents (Sharepoint)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-4 col-md-3 col-lg-2">
-                    <a href="#">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <i class="fa fa-tasks"></i>
-                                <div class="panel-title">
-                                    <h4>Jobs/Tasks Reports</h4>
-                                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="mdi mdi-web"></i>
+                            <div class="panel-title">
+                                <h4>WSPS Services (Production)</h4>
                             </div>
-                            <div class="panel-body">
-                                <div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
-                                </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a class="panel panel-clickable" href="#">
+                        <div class="panel-heading text-center">
+                            <i class="fa fa-tasks"></i>
+                            <div class="panel-title">
+                                <h4>Jobs/Tasks Reports</h4>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut laoreet odio, a luctus arcu.</p>
                             </div>
                         </div>
                     </a>
@@ -776,6 +803,8 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid"></div>
 
 
     <footer class="navbar navbar-default pageFooter">
@@ -791,5 +820,21 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 
     <script src="Scripts/menu.js"></script>
+    <script>
+        //Input date polyfill
+        //if (!Modernizr.inputtypes.date) {
+        //    webshim.setOptions("forms-ext", {
+        //        "date": {
+        //            "startView": 2
+        //        }
+        //    });
+
+        //    webshim.polyfill('forms-ext');
+        //}
+
+        $.material.init();
+
+    </script>
+
 </body>
 </html>
