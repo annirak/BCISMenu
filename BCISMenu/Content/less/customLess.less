@@ -1,9 +1,5 @@
 ﻿@import "mixins.less";
-@screen-sm-min: 768px;
-@screen-md-min: 992px;
-@screen-lg-min: 1200px;
-@screen-xlg-min: 1366px;
-@screen-fhd-min: 1920px;
+@import "variables";
 
 /*#region Navbar Menu */
 
@@ -300,10 +296,30 @@
 
 
 /*#region Page Footer */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#pageWrapper {
+    min-height: 100%;
+    position: relative;
+    /*height: 100%;*/
+}
+
+.main-container {
+    padding-bottom: 30px; /* Height of the footer */
+}
+
 .pageFooter {
     text-align: center;
     min-height: 30px;
     margin-bottom: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 
     p {
         margin: 5px 0;
@@ -499,134 +515,6 @@
 
 
 
-/*#region Dashboard */
-
-#carousel-graphs {
-    margin-top: -20px;
-
-    .carousel-indicators {
-        bottom: -20px;
-    }
-
-    a.btn-fab {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        z-index: 2;
-    }
-
-    .panel-body {
-        height: 119px;
-
-        @media (min-width: @screen-lg-min) {
-            height: 176px;
-        }
-
-        @media (min-width: @screen-xlg-min),(max-width: @screen-sm-min) {
-            height: 158px;
-        }
-    }
-}
-
-.panel-clickable {
-    display: block;
-
-    &:hover, &:focus {
-        &:extend(.bigShadow);
-        text-decoration: none;
-    }
-}
-
-#carousel-graphs, #appsDir {
-    .panel-heading {
-        .mdi::before, .fa {
-            font-size: 48px;
-            line-height: 48px;
-        }
-    }
-}
-
-#appsDir {
-    margin-top: 38px;
-
-    .panel {
-        /*margin-right: auto;
-            margin-left: auto;
-            @media (min-width: @screen-sm-min) {
-                min-width: 226px;
-            }
-
-            @media (min-width: @screen-lg-min) {
-                min-width: 180px;
-            }
-
-            @media (min-width: @screen-xlg-min) {
-                min-width: 207px;
-            }*/
-        margin-bottom: 30px;
-    }
-
-    .panel-heading {
-        padding: 10px 10px 0;
-    }
-
-    .panel-body {
-        text-align: center;
-        padding: 0 10px;
-        display: table;
-        //height: 187px; //@panel-width - 59;
-        /*height: 200px;
-            @media (min-width: @screen-sm-min) {
-                height: 178px;
-            }
-            @media (min-width: @screen-md-min) {
-                height: 158px;
-            }           
-            @media (min-width: @screen-lg-min) {
-                height: 178px;
-            }*/
-        > div {
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
-
-    .panel-title {
-        display: table;
-        height: 76px;
-        text-align: center;
-        width: 100%;
-
-        @media (max-width: (@screen-sm-min - 1)) {
-            /*height: 48px;*/
-        }
-
-        @media (min-width: @screen-lg-min) and (max-width: @screen-xlg-min) {
-            height: 95px;
-        }
-
-        h4 {
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
-
-    .row > div {
-        padding-left: 0;
-        padding-right: 0;
-
-        > div {
-            padding: 0 5px;
-        }
-    }
-}
-
-/*#endregion */
-
-
 /*#region 5 Columns */
 .col-xs-15,
 .col-sm-15,
@@ -664,7 +552,6 @@
     }
 }
 /*#endregion */
-
 /*#region SideMenu */
 #hamburger {
     display: block;

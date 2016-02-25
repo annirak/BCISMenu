@@ -60,28 +60,12 @@
     <Content Include="Content\blue.css" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap_original.css" />
-    <Content Include="Content\colours.css">
-      <DependentUpon>colours.less</DependentUpon>
-    </Content>
-    <Content Include="Content\colours.min.css">
-      <DependentUpon>colours.css</DependentUpon>
-    </Content>
     <Content Include="Content\config.json" />
-    <Content Include="Content\customLess.css">
-      <DependentUpon>customLess.less</DependentUpon>
-    </Content>
-    <Content Include="Content\customLess.min.css">
-      <DependentUpon>customLess.css</DependentUpon>
-    </Content>
     <Content Include="Content\d3Example.css" />
     <Content Include="Content\dashboard.css" />
-    <Content Include="Content\material-theme.css">
-      <DependentUpon>material-theme.less</DependentUpon>
-    </Content>
-    <Content Include="Content\material-theme.min.css">
-      <DependentUpon>material-theme.css</DependentUpon>
-    </Content>
     <Content Include="Dashboard.html" />
+    <Content Include="MenuHamburger8.html" />
+    <Content Include="MenuHamburger9.html" />
     <Content Include="MenuHamburger.html" />
     <Content Include="MenuMaterialBlue.html" />
     <Content Include="Scripts\d3Example.js" />
@@ -91,19 +75,12 @@
     <Content Include="Scripts\lib\js-webshim\minified\shims\styles\widget.eot" />
     <Content Include="Scripts\lib\js-webshim\minified\shims\styles\widget.ttf" />
     <Content Include="Scripts\lib\js-webshim\minified\shims\styles\widget.woff" />
-    <Content Include="Content\material-theme.less" />
-    <Content Include="Content\colours.less" />
-    <Content Include="Content\customLess.less" />
-    <Content Include="Content\mixins.less" />
-    <Content Include="Content\customLess.css.map">
-      <DependentUpon>customLess.css</DependentUpon>
-    </Content>
-    <Content Include="Content\material-theme.css.map">
-      <DependentUpon>material-theme.css</DependentUpon>
-    </Content>
-    <Content Include="Content\colours.css.map">
-      <DependentUpon>colours.css</DependentUpon>
-    </Content>
+    <Content Include="Content\less\material-theme.less" />
+    <Content Include="Content\less\colours.less" />
+    <Content Include="Content\less\customLess.less" />
+    <Content Include="Content\less\mixins.less" />
+    <Content Include="Content\less\variables.less" />
+    <Content Include="Content\less\dashboard.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -295,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\CustomCss\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

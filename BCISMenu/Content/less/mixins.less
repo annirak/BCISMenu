@@ -1,17 +1,19 @@
-﻿.innerShadow {
-    position: relative;
+﻿.innerShadowUpDown {
+    /*position: relative;
 
-    &::before {
-        box-shadow: inset 0 8px 8px -5px rgba(0,0,0,.25),inset 0 -8px 8px -5px rgba(0,0,0,.25);
-        content: '';
+    &::before {*/
+    -webkit-box-shadow: inset 0 8px 8px -5px rgba(0,0,0,.25), inset 0 -8px 8px -5px rgba(0,0,0,.25);
+    -moz-box-shadow: inset 0 8px 8px -5px rgba(0,0,0,.25), inset 0 -8px 8px -5px rgba(0,0,0,.25);
+    box-shadow: inset 0 8px 8px -5px rgba(0,0,0,.25), inset 0 -8px 8px -5px rgba(0,0,0,.25);
+    /*content: '';
         display: block;
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
         width: 100%;
-        z-index: 1;
-    }
+        z-index: 1;*/
+    /*}*/
 }
 
 .bigShadow {
@@ -70,10 +72,7 @@
     -moz-border-radius-bottomright: @bottomright;
     -moz-border-radius-bottomleft: @bottomleft;
     -moz-border-radius-topleft: @topleft;
-    border-top-right-radius: @topright;
-    border-bottom-right-radius: @bottomright;
-    border-bottom-left-radius: @bottomleft;
-    border-top-left-radius: @topleft;
+    border-radius: @topleft @topright @bottomright @bottomleft;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
@@ -107,6 +106,8 @@
     -webkit-animation: @name @duration @delay @ease;
     -moz-animation: @name @duration @delay @ease;
     -ms-animation: @name @duration @delay @ease;
+    -o-animation: @name @duration @delay @ease;
+    animation: @name @duration @delay @ease;
 }
 
 .transition (@transition) {
@@ -114,6 +115,7 @@
     -moz-transition: @transition;
     -ms-transition: @transition;
     -o-transition: @transition;
+    transition: @transition;
 }
 
 .transform(@string) {
@@ -121,6 +123,7 @@
     -moz-transform: @string;
     -ms-transform: @string;
     -o-transform: @string;
+    transform: @string;
 }
 
 .scale (@factor) {
@@ -128,6 +131,7 @@
     -moz-transform: scale(@factor);
     -ms-transform: scale(@factor);
     -o-transform: scale(@factor);
+    transform: scale(@factor);
 }
 
 .rotate (@deg) {
@@ -135,6 +139,7 @@
     -moz-transform: rotate(@deg);
     -ms-transform: rotate(@deg);
     -o-transform: rotate(@deg);
+    transform: rotate(@deg);
 }
 
 .skew (@deg, @deg2) {
@@ -142,6 +147,7 @@
     -moz-transform: skew(@deg, @deg2);
     -ms-transform: skew(@deg, @deg2);
     -o-transform: skew(@deg, @deg2);
+    transform: skew(@deg, @deg2);
 }
 
 .translate (@x, @y: 0) {
@@ -149,6 +155,7 @@
     -moz-transform: translate(@x, @y);
     -ms-transform: translate(@x, @y);
     -o-transform: translate(@x, @y);
+    transform: translate(@x, @y);
 }
 
 .translate3d (@x, @y: 0, @z: 0) {
@@ -156,6 +163,7 @@
     -moz-transform: translate3d(@x, @y, @z);
     -ms-transform: translate3d(@x, @y, @z);
     -o-transform: translate3d(@x, @y, @z);
+    transform: translate3d(@x, @y, @z);
 }
 
 .perspective (@value: 1000) {
@@ -170,4 +178,5 @@
     -moz-transform-origin: @x @y;
     -ms-transform-origin: @x @y;
     -o-transform-origin: @x @y;
+    transform-origin: @x @y;
 }

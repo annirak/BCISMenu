@@ -189,7 +189,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 # My Files
-BCISMenu/Content/colours.css*
-BCISMenu/Content/customLess.css*
-BCISMenu/Content/material-theme.css*
-BCISMenu/Content/mixins.css*
+BCISMenu/Content/CustomCss/

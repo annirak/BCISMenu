@@ -1,4 +1,5 @@
 ﻿@import "colours.less";
+@import "mixins.less";
 
 a, a:hover, a:focus {
     color: @link-color;
@@ -25,6 +26,21 @@ a, a:hover, a:focus {
 
     .dropdown-large.open > ul > li > label {
         color: @black;
+    }
+
+
+    .open > a {
+        /*background-image: -webkit-linear-gradient(top, #616161 0, #757575 100%);
+        background-image: -o-linear-gradient(top, #616161 0, #757575 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#757575));
+        background-image: linear-gradient(to bottom, #616161 0, #757575 100%);
+        background-repeat: repeat-x;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff616161', endColorstr='#ff757575', GradientType=0);*/
+        /*.inner-shadow(0, 3px, 9px, 0, 0.075);
+        .opacity();*/
+        /*color: inherit;
+        background-color: rgba(255, 255, 255, 0.2);*/
+        background-color: lighten(@menu-color, 20%);
     }
 }
 
@@ -104,11 +120,20 @@ rect {
     background-color: @gray;
 
     .panel-heading {
-        color: @clear-blue;
+        color: darken(@clear-blue,7%); //@clear-blue; //@default-green; //@green2;//@dark-blue; //
         background-color: @white;
+        .text-shadow();
     }
 
     .panel-body, .panel-heading h4 {
         color: @black;
+        background-color: @white;
+    }
+
+    &.colorbg {
+        background-color: @clear-blue; //@green;
+        color: contrast(@clear-blue);
+        /*.inner-shadow(0,3px,9px,0,.25);*/
+        .innerShadowUpDown;
     }
 }

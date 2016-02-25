@@ -50,4 +50,15 @@
     });
     //#endregion
 
+
+    var $sideMenu = $('#menuNavbarOut');
+    var $navHeader = $('nav.navbar.navbar-default .navbar-header');
+
+    $sideMenu.on('show.bs.offcanvas', function (e) {
+        $navHeader.hide();
+    });
+    $sideMenu.on('hidden.bs.offcanvas', function (e) {
+        $navHeader.show();
+    });
+
 })();
