@@ -115,7 +115,7 @@
     "EnableChainCompilation": true,
     "GenerateSourceMaps": true,
     "MinifyInPlace": false,
-    "OutputDirectory": "..\\..\\Content\\CustomCss",
+    "OutputDirectory": "/Content/customCss",
     "ProcessSourceMapsForEditorEnhancements": true,
     "ShowPreviewPane": true,
     "StrictMath": false

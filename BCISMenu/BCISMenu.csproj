@@ -58,9 +58,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\blue.css" />
+    <Content Include="Content\bootstrap-material-design\scripts\index.js" />
+    <Content Include="Content\bootstrap-material-design\scripts\material.js" />
+    <Content Include="Content\bootstrap-material-design\scripts\ripples.js" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap_original.css" />
     <Content Include="Content\config.json" />
+    <Content Include="Content\CustomCss\bootstrap-material-design.css" />
+    <Content Include="Content\CustomCss\bootstrap-material-design.min.css">
+      <DependentUpon>bootstrap-material-design.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\colours.css" />
+    <Content Include="Content\CustomCss\colours.min.css">
+      <DependentUpon>colours.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\custom.css" />
+    <Content Include="Content\CustomCss\custom.min.css">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\dashboard.css" />
+    <Content Include="Content\CustomCss\dashboard.min.css">
+      <DependentUpon>dashboard.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\material-theme.css" />
+    <Content Include="Content\CustomCss\material-theme.min.css">
+      <DependentUpon>material-theme.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\ripples.css" />
+    <Content Include="Content\CustomCss\ripples.min.css">
+      <DependentUpon>ripples.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\variables.css" />
+    <Content Include="Content\CustomCss\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <Content Include="Content\d3Example.css" />
     <Content Include="Content\dashboard.css" />
     <Content Include="Dashboard.html" />
@@ -81,6 +112,61 @@
     <Content Include="Content\less\mixins.less" />
     <Content Include="Content\less\variables.less" />
     <Content Include="Content\less\dashboard.less" />
+    <Content Include="Content\CustomCss\custom.css.map">
+      <DependentUpon>custom.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\dashboard.css.map">
+      <DependentUpon>dashboard.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\material-theme.css.map">
+      <DependentUpon>material-theme.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\colours.css.map">
+      <DependentUpon>colours.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap-material-design\less\bootstrap-material-design.less" />
+    <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-dropdownjs.less" />
+    <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-nouislider.less" />
+    <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-selectize.less" />
+    <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-snackbarjs.less" />
+    <Content Include="Content\bootstrap-material-design\less\ripples.less" />
+    <Content Include="Content\bootstrap-material-design\less\_alerts.less" />
+    <Content Include="Content\bootstrap-material-design\less\_buttons.less" />
+    <Content Include="Content\bootstrap-material-design\less\_cards.less" />
+    <Content Include="Content\bootstrap-material-design\less\_checkboxes.less" />
+    <Content Include="Content\bootstrap-material-design\less\_colors.less" />
+    <Content Include="Content\bootstrap-material-design\less\_core.less" />
+    <Content Include="Content\bootstrap-material-design\less\_dialogs.less" />
+    <Content Include="Content\bootstrap-material-design\less\_dividers.less" />
+    <Content Include="Content\bootstrap-material-design\less\_form.less" />
+    <Content Include="Content\bootstrap-material-design\less\_import-bs-less.less" />
+    <Content Include="Content\bootstrap-material-design\less\_import-bs-sass.less" />
+    <Content Include="Content\bootstrap-material-design\less\_inputs-size.less" />
+    <Content Include="Content\bootstrap-material-design\less\_inputs.less" />
+    <Content Include="Content\bootstrap-material-design\less\_lists.less" />
+    <Content Include="Content\bootstrap-material-design\less\_mixins.less" />
+    <Content Include="Content\bootstrap-material-design\less\_navbar.less" />
+    <Content Include="Content\bootstrap-material-design\less\_panels.less" />
+    <Content Include="Content\bootstrap-material-design\less\_plugins.less" />
+    <Content Include="Content\bootstrap-material-design\less\_popups.less" />
+    <Content Include="Content\bootstrap-material-design\less\_progress.less" />
+    <Content Include="Content\bootstrap-material-design\less\_radios.less" />
+    <Content Include="Content\bootstrap-material-design\less\_shadows.less" />
+    <Content Include="Content\bootstrap-material-design\less\_tabs.less" />
+    <Content Include="Content\bootstrap-material-design\less\_themes.less" />
+    <Content Include="Content\bootstrap-material-design\less\_togglebutton.less" />
+    <Content Include="Content\bootstrap-material-design\less\_typography.less" />
+    <Content Include="Content\bootstrap-material-design\less\_variables.less" />
+    <Content Include="Content\bootstrap-material-design\less\_welljumbo.less" />
+    <Content Include="Content\CustomCss\variables.css.map">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\bootstrap-material-design.css.map">
+      <DependentUpon>bootstrap-material-design.css</DependentUpon>
+    </Content>
+    <Content Include="Content\CustomCss\ripples.css.map">
+      <DependentUpon>ripples.css</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -273,9 +359,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\CustomCss\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
