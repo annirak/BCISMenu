@@ -77,7 +77,7 @@
     <Content Include="Scripts\lib\js-webshim\minified\shims\styles\widget.woff" />
     <Content Include="Content\less\material-theme.less" />
     <Content Include="Content\less\colours.less" />
-    <Content Include="Content\less\customLess.less" />
+    <Content Include="Content\less\custom.less" />
     <Content Include="Content\less\mixins.less" />
     <Content Include="Content\less\variables.less" />
     <Content Include="Content\less\dashboard.less" />
