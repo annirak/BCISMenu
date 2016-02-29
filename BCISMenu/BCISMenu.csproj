@@ -69,10 +69,6 @@
     <Content Include="Content\CustomCss\bootstrap-material-design.min.css">
       <DependentUpon>bootstrap-material-design.css</DependentUpon>
     </Content>
-    <Content Include="Content\CustomCss\colours.css" />
-    <Content Include="Content\CustomCss\colours.min.css">
-      <DependentUpon>colours.css</DependentUpon>
-    </Content>
     <Content Include="Content\CustomCss\custom.css" />
     <Content Include="Content\CustomCss\custom.min.css">
       <DependentUpon>custom.css</DependentUpon>
@@ -88,10 +84,6 @@
     <Content Include="Content\CustomCss\ripples.css" />
     <Content Include="Content\CustomCss\ripples.min.css">
       <DependentUpon>ripples.css</DependentUpon>
-    </Content>
-    <Content Include="Content\CustomCss\variables.css" />
-    <Content Include="Content\CustomCss\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
     </Content>
     <Content Include="Content\d3Example.css" />
     <Content Include="Content\dashboard.css" />
@@ -127,9 +119,6 @@
     <Content Include="Content\CustomCss\material-theme.css.map">
       <DependentUpon>material-theme.css</DependentUpon>
     </Content>
-    <Content Include="Content\CustomCss\colours.css.map">
-      <DependentUpon>colours.css</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-material-design\less\bootstrap-material-design.less" />
     <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-dropdownjs.less" />
     <Content Include="Content\bootstrap-material-design\less\plugins\_plugin-nouislider.less" />
@@ -164,9 +153,6 @@
     <Content Include="Content\bootstrap-material-design\less\_typography.less" />
     <Content Include="Content\bootstrap-material-design\less\_variables.less" />
     <Content Include="Content\bootstrap-material-design\less\_welljumbo.less" />
-    <Content Include="Content\CustomCss\variables.css.map">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
     <Content Include="Content\CustomCss\bootstrap-material-design.css.map">
       <DependentUpon>bootstrap-material-design.css</DependentUpon>
     </Content>
