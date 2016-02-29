@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
     <Content Include="Content\blue.css" />
     <Content Include="Content\bootstrap-material-design\scripts\index.js" />
     <Content Include="Content\bootstrap-material-design\scripts\material.js" />
@@ -94,12 +95,17 @@
     </Content>
     <Content Include="Content\d3Example.css" />
     <Content Include="Content\dashboard.css" />
+    <Content Include="Content\jasny-bootstrap.css" />
+    <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Dashboard.html" />
+    <Content Include="MenuHamburgerColor.html" />
     <Content Include="MenuHamburger8.html" />
     <Content Include="MenuHamburger9.html" />
     <Content Include="MenuHamburger.html" />
     <Content Include="MenuMaterialBlue.html" />
     <Content Include="Scripts\d3Example.js" />
+    <Content Include="Scripts\jasny-bootstrap.js" />
+    <Content Include="Scripts\jasny-bootstrap.min.js" />
     <Content Include="Scripts\lib\js-webshim\minified\shims\jme\jme.eot" />
     <Content Include="Scripts\lib\js-webshim\minified\shims\jme\jme.ttf" />
     <Content Include="Scripts\lib\js-webshim\minified\shims\jme\jme.woff" />
@@ -167,6 +173,7 @@
     <Content Include="Content\CustomCss\ripples.css.map">
       <DependentUpon>ripples.css</DependentUpon>
     </Content>
+    <Content Include="Content\jasny-bootstrap.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -192,7 +199,9 @@
     <Content Include="MenuMaterial - Copy.html" />
     <Content Include="MenuMaterial.html" />
     <Content Include="Menu.html" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
