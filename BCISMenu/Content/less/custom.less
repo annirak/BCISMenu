@@ -27,9 +27,10 @@
     }
 }
 
-.navbar {
+.navbar, .navbar.navbar-default {
     /*font-weight: normal;*/
     font-size: 16px;
+    .drop-shadow(0, 2px,5px,0,0.26);
 
     img {
         height: 50px;
@@ -38,10 +39,6 @@
     .headerLogo {
         padding: 5px 15px;
         height: 50px;
-    }
-
-    .dropdown-menu li > a {
-        font-size: 14px;
     }
 
     .navbar-header button.navbar-toggle#regularHamburger {
@@ -66,26 +63,56 @@
 
     .dropdown-menu:not(.dropdown-menu-large) {
         min-width: 100%;
+
+        li > a {
+            font-weight: 300;
+        }
     }
-}
 
-.dropdown-large {
-    position: static !important;
-}
+    .dropdown-large {
+        position: static !important;
+    }
 
-.dropdown-menu-large {
-    padding: 20px 10px 20px 30px;
-    border-top-width: 0;
-    width: 90%;
-    left: 5% !important;
-    right: 5% !important;
+    .dropdown-menu-large {
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-width: 0;
+        .sizeCenter();
 
-    & > li > ul {
-        padding: 0;
-        margin: 0;
+        > li > ul {
+            padding: 0;
+            margin: 0;
 
-        & > li {
-            list-style: none;
+            > li {
+                list-style: none;
+            }
+        }
+
+        li > a {
+            /*font-size: 14px;*/
+            position: relative;
+            display: block;
+            padding: 5px 0;
+
+            &:hover, &:focus {
+                text-decoration: none;
+            }
+        }
+
+        &#menuReports {
+            .sizeCenter(.6);
+        }
+
+        &#menuCisUpdates {
+            .sizeCenter(.8);
+        }
+
+        .sizeCenter(@width: .9) {
+            @diff: (1 - @width)/2;
+            width: percentage(@width);
+            left: percentage(@diff);
+            right: percentage(@diff);
         }
     }
 }
@@ -257,7 +284,7 @@
 
     .submenuTitle {
         font-size: 16px;
-        padding-left: 16px;
+        /*padding-left: 16px;*/
     }
 
     .navbar-nav > li > a {
@@ -266,18 +293,18 @@
     }
 
     .submenu li {
-        margin-bottom: 5px;
+        /*margin-bottom: 5px;*/
     }
 }
 
-@media (min-width: @screen-md-min ) and (max-width:@screen-lg-min) {
-    .navbar .dropdown-menu-large li > a,
-    .navbar .dropdown-menu-large li > label {
+@media (min-width: @screen-md-min ) and (max-width:@screen-xlg-min) {
+    .navbar .dropdown-menu li > a,
+    .navbar.navbar-default .dropdown-menu li > a {
         font-size: 12px !important;
     }
 
     .dropdown-menu-large {
-        padding: 20px 10px;
+        /*padding: 20px 10px;*/
     }
 
     .navbar-header {
@@ -320,6 +347,7 @@ body {
     width: 100%;
     position: absolute;
     bottom: 0;
+    .drop-shadow(0, -2px,5px,0,0.26);
 
     p {
         margin: 5px 0;
@@ -513,8 +541,6 @@ body {
 
 /*#endregion */
 
-
-
 /*#region 5 Columns */
 .col-xs-15,
 .col-sm-15,
@@ -552,13 +578,21 @@ body {
     }
 }
 /*#endregion */
+
 /*#region SideMenu */
+
 #hamburger {
     display: block;
     float: left;
+    max-height: 32px;
+    margin-left: 15px;
 
-    @media(max-width:@screen-md-min) {
-        display: none;
+    i {
+        width: 22px;
+        /*display: none;*/
+        &:before {
+            top: 0;
+        }
     }
 }
 
@@ -571,6 +605,12 @@ body {
 
 #menuNavbarOut {
     font-size: 16px;
+    top: 50px;
+    .drop-shadow(2px, 0,3px,0,0.26);
+
+    @media (min-width:@screen-lg-min) {
+        width: 400px;
+    }
 
     .dropdown-menu > li > a {
         font-size: 16px;
@@ -582,6 +622,30 @@ body {
         padding-top: 10px;
         padding-bottom: 10px;
         margin-bottom: 5px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    ul > li {
+        > a {
+            padding-left: 25px;
+        }
+
+        > ul > li {
+            > a {
+                padding-left: 50px;
+            }
+
+            > ul > li > a {
+                padding-left: 30px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
 
@@ -604,4 +668,15 @@ body {
         z-index: 1040;
     }
 }
+
+.navbar, .pageFooter {
+    z-index: 1031;
+}
+
+@media(max-width:@screen-md-min) {
+    #hamburger, #menuNavbarOut, #menu-background {
+        display: none;
+    }
+}
+
 /*#endregion */

@@ -1,24 +1,16 @@
-﻿@import "colours.less";
-@import "mixins.less";
+﻿@import "mixins.less";
+@import "variables";
 
 a, a:hover, a:focus {
     color: @link-color;
 }
 
+.dropdown-menu > li > a {
+    color: @link-color;
+}
+
 .navbar, .navbar.navbar-default {
     background-color: @menu-color;
-
-    .dropdown-menu {
-        li {
-            color: @menu-color;
-        }
-
-        li > a {
-            &:hover, &:focus {
-                color: @menu-color;
-            }
-        }
-    }
 
     .navbar-header > h4 > small {
         color: inherit;
@@ -28,23 +20,12 @@ a, a:hover, a:focus {
         color: @black;
     }
 
-
-    .open > a {
-        /*background-image: -webkit-linear-gradient(top, #616161 0, #757575 100%);
-        background-image: -o-linear-gradient(top, #616161 0, #757575 100%);
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#757575));
-        background-image: linear-gradient(to bottom, #616161 0, #757575 100%);
-        background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff616161', endColorstr='#ff757575', GradientType=0);*/
-        /*.inner-shadow(0, 3px, 9px, 0, 0.075);
-        .opacity();*/
-        /*color: inherit;
-        background-color: rgba(255, 255, 255, 0.2);*/
-        background-color: lighten(@menu-color, 20%);
+    .navbar-nav > .open > a {
+        background-color: rgba(255, 255, 255, 0.15);
     }
 }
 
-.btn.btn-raised.btn-primary, .input-group-btn .btn.btn-raised.btn-primary, .btn.btn-fab.btn-primary, .input-group-btn .btn.btn-fab.btn-primary, .btn-group-raised .btn.btn-primary, .btn-group-raised .input-group-btn .btn.btn-primary {
+/*.btn.btn-raised.btn-primary, .input-group-btn .btn.btn-raised.btn-primary, .btn.btn-fab.btn-primary, .input-group-btn .btn.btn-fab.btn-primary, .btn-group-raised .btn.btn-primary, .btn-group-raised .input-group-btn .btn.btn-primary {
     background-color: @primary-color;
     color: rgba(255,255,255, 0.84);
 }
@@ -76,64 +57,196 @@ rect {
     &:hover {
         fill: lighten(@graph, 15%);
     }
-}
+}*/
 
 
-@media (max-width: 991px) {
-    .navbar-nav .open .dropdown-menu > li > a {
-        color: rgba(255,255,255, 0.84) !important;
-
-        &:hover, &:focus {
-            color: rgba(255, 255, 255, 0.84) !important;
-        }
-    }
-}
-
-
-#carousel-graphs {
+#dashboard {
+    background-color: @dashboard-background; //@white;
     .carousel-indicators {
         li {
-            border-color: darken(@gray, 15%);
+            border-color: darken(@grey, 15%);
 
             &:hover {
-                background-color: lighten(@gray, 5%);
+                background-color: lighten(@grey, 5%);
             }
         }
 
         .active {
-            background-color: @gray;
+            background-color: @grey;
         }
     }
 
     .panel {
         .panel-heading {
-            background-color: @dark-blue;
+            /*background-color: @dark-blue;*/
         }
 
         .panel-body {
-            color: @black;
+            /*color: @black;*/
+        }
+    }
+
+    &.white {
+        .colorbg(@white,@blue-ram);
+
+        .panel {
+            /*box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2), 0 0 6px 0 rgba(0, 0, 0, 0.2);*/
+            &:hover, &:focus {
+                &:extend(.bigShadow);
+            }
+        }
+
+        .panel-heading {
+            .drop-shadow(0,-1px,6px,-1px,.25);
+        }
+    }
+
+    &.colorbg {
+        .colorbg(@grey-50,@green-500);
+    }
+
+    &.blue {
+        .colorbg(@blue-grey-50,@blue-500);
+    }
+
+    .colorbg(@bgcolor,@color) {
+        background-color: @bgcolor;
+
+        .panel {
+            .panel-heading {
+                background-color: @color;
+                /*color:contrast(@color);*/
+            }
         }
     }
 }
 
 #appsDir {
-    background-color: @gray;
+    background-color: @apps-dir-background;
+    color: contrast(@apps-dir-background);
+    .inner-shadow(0,2px,5px,0,.25);
 
-    .panel-heading {
-        color: darken(@clear-blue,7%); //@clear-blue; //@default-green; //@green2;//@dark-blue; //
-        background-color: @white;
-        .text-shadow();
+    .panel-clickable {
+        &:hover, &:focus {
+            color: @apps-dir-icons;
+        }
     }
 
-    .panel-body, .panel-heading h4 {
-        color: @black;
+    .panel-heading {
+        color: @apps-dir-icons;
         background-color: @white;
     }
 
     &.colorbg {
-        background-color: @clear-blue; //@green;
-        color: contrast(@clear-blue);
-        /*.inner-shadow(0,3px,9px,0,.25);*/
         .innerShadowUpDown;
+        .colorbg(@clear-blue);
+    }
+
+    &.color-blue-grey {
+        .innerShadowUpDown;
+        .colorbg(@blue-grey-500);
+    }
+
+    &.color-blue {
+        .innerShadowUpDown;
+        .colorbg(@blue-500);
+    }
+
+    &.color-pink {
+        .innerShadowUpDown;
+        .colorbg(@pink-500);
+    }
+
+    &.color-teal {
+        .innerShadowUpDown;
+        .colorbg(@teal-500);
+    }
+
+    &.lightbg {
+        .inner-shadow(0,2px,5px,0,.25);
+        /*.innerShadowUpDown;*/
+        background-color: @grey-ram;
+        color: contrast(@grey-ram);
+        /*.drop-shadow();
+        margin: 10px;*/
+        /*.inner-shadow(0,3px,9px,0,.25);*/
+        /*.innerShadowUpDown;*/
+    }
+
+    .colorbg(@background-color: @black) {
+        background-color: @background-color;
+        color: contrast(@background-color);
+
+        .panel-heading i {
+            color: darken(@background-color,7%);
+        }
     }
 }
+
+.navmenu-theme(@background-color: @black, @color: contrast(@background-color)) {
+    background-color: @background-color;
+    border-color: darken(@background-color,10%);
+
+    .navmenu-nav > li > a, .navbar-offcanvas .navmenu-nav > li > a {
+        color: @color;
+    }
+
+    .navmenu-nav > .dropdown > a .caret, .navbar-offcanvas .navmenu-nav > .dropdown > a .caret {
+        border-top-color: @color;
+        border-bottom-color: @color;
+    }
+
+    .navmenu-nav > .open > a, .navbar-offcanvas .navmenu-nav > .open > a, .navmenu-nav > .open > a:hover, .navbar-offcanvas .navmenu-nav > .open > a:hover, .navmenu-nav > .open > a:focus, .navbar-offcanvas .navmenu-nav > .open > a:focus {
+        background-color: lighten(@background-color,10%);
+        /*background-color: desaturate(@background-color,10%);*/
+        /*background-color: @background-color;*/
+        color: darken(@color,20%);
+    }
+
+    .navmenu-nav > li > a:hover, .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-nav > li > a:focus, .navbar-offcanvas .navmenu-nav > li > a:focus {
+        color: darken(@color,20%);
+        /*color: saturate(@color,20%);*/
+        background-color: transparent;
+    }
+
+    .navmenu-nav.dropdown-menu, .navbar-offcanvas .navmenu-nav.dropdown-menu {
+        /*background-color: lighten(@background-color,10%);*/
+        background-color: @background-color;
+    }
+
+    .navmenu-nav > .active > a, .navbar-offcanvas .navmenu-nav > .active > a, .navmenu-nav > .active > a:hover, .navbar-offcanvas .navmenu-nav > .active > a:hover, .navmenu-nav > .active > a:focus, .navbar-offcanvas .navmenu-nav > .active > a:focus {
+        background-color: lighten(@background-color,10%);
+        color: darken(@color,20%);
+    }
+}
+
+.navmenu-default {
+    .navmenu-theme(@sidemenu-color);
+}
+
+.navmenu-black {
+    .navmenu-theme(@black,contrast(@black));
+}
+
+.navmenu-grey {
+    .navmenu-theme(@grey-800, contrast(@grey-800));
+}
+
+
+/*#region panels */
+
+.panel.panel-primary > .panel-heading {
+    background-color: @primary-color;
+}
+
+.panel-clickable, .panel-clickable:hover, .panel-clickable:focus {
+    color: @black;
+
+    &.panel-primary {
+        &:hover, &:focus {
+            color: @primary-color;
+        }
+    }
+}
+
+/*#endregion */

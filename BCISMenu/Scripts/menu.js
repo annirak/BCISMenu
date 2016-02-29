@@ -55,10 +55,23 @@
     var $navHeader = $('nav.navbar.navbar-default .navbar-header');
 
     $sideMenu.on('show.bs.offcanvas', function (e) {
-        $navHeader.hide();
+        $('#hamburger > i').toggle();
+        $('#hamburger > span').toggle();
+        $('#menu-background').addClass("canvas-sliding");
+        $('#menuNavbar > ul > li').addClass('disabled');
+        $('#menuNavbar > ul > li > a').addClass('disabled');
     });
     $sideMenu.on('hidden.bs.offcanvas', function (e) {
-        $navHeader.show();
+        $('#hamburger > i').toggle();
+        $('#hamburger > span').toggle();
+        $('#menu-background').removeClass("canvas-sliding");
+        $('#menuNavbar > ul > li').removeClass('disabled');
+        $('#menuNavbar > ul > li > a').removeClass('disabled');
+    });
+       
+
+    $('#hamburger').click(function () {
+        $('#menuNavbar > ul > li.dropdown').removeClass('open');
     });
 
 })();
