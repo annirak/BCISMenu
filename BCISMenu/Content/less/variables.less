@@ -14,6 +14,15 @@
 @screen-8k-min: 8192px;*/
 
 
+/*#region generate colors */
+
+
+// Triadic structure
+@color-base: @light-blue-800; //@default-green; //@dark-gray; //@dark-blue; //@brown;
+@triadic-secondary: spin(@color-base, -(360 / 3)); //spin(@color-base,30); //
+@triadic-tertiary: spin(@color-base, (360 / 3)); //spin(@color-base,-30); //
+/*#endregion */
+
 /*#region Set Colors */
 @primary-color: @light-blue-800; // @blue-ram; //@blue-500; //@clear-blue;
 
@@ -24,7 +33,7 @@
 
 /*#region dashboard Variables */
 @dashboard-background: @white;
-@apps-dir-icons: @light-blue-900; //@clear-blue;
+@apps-dir-icons: @light-blue-900; //@triadic-tertiary; //@triadic-secondary;//@clear-blue;
 @apps-dir-background: @grey-100; //@grey-ram;
 
 /*#endregion */
