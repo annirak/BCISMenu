@@ -160,6 +160,8 @@
       <DependentUpon>ripples.css</DependentUpon>
     </Content>
     <Content Include="Content\jasny-bootstrap.css.map" />
+    <Content Include="Content\bootstrap-material-design\less\_form-border.less" />
+    <Content Include="Content\bootstrap-material-design\less\_inputs-border.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
